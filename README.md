@@ -14,5 +14,5 @@ TODO
 - [ ] Save User-data in keychain
 - [x] Load Album data
 - [ ] Insert Album data
-- [ ] Edit Album data
+- [ ] Edit/Delete Album data
 - [ ] Change Album data location

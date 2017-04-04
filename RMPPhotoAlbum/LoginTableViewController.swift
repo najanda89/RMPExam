@@ -22,6 +22,10 @@ class LoginTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // TEST
+        usernameTextField.text = "maptales@someinitial.com"
+        passwordTextField.text = "tpalsk1234"
+        
         activity.center = CGPoint(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 2 - 64.0)
         activity.color = UIColor.gray
         activity.stopAnimating()
