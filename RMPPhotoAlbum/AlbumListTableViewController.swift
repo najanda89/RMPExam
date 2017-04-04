@@ -116,5 +116,23 @@ class AlbumListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let edit = UITableViewRowAction(style: .normal, title: "수정") { (editRowAction, indexPath) in
+            
+        }
+        
+        let delete = UITableViewRowAction(style: .destructive, title: "삭제") { (deleteRowAction, indexPath) in
+            
+            do {
+                try! self.realm.write {
+                    self.realm.delete(self.albums[indexPath.row].photo)
+                    self.realm.delete(self.albums[indexPath.row])
+                }
+            }
+        }
+        
+        return [delete, edit]
+    }
 
 }
