@@ -89,8 +89,9 @@ class AlbumListTableViewController: UITableViewController {
 
         }
         
-        alertController.addAction(okAlert)
         alertController.addAction(cancelAlert)
+        alertController.addAction(okAlert)
+        
         
         self.present(alertController, animated: true, completion: nil)
         
@@ -114,13 +115,10 @@ class AlbumListTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AlbumListTableViewCell
         
-        
-        if let albumName = albums[indexPath.row].albumName {
-            cell.textLabel?.text = albumName
-            cell.detailTextLabel?.text = String(describing: albums[indexPath.row].createDate)
-        }
+        let album = albums[indexPath.row]
+        cell.configure(album: album)
         
         return cell
     }

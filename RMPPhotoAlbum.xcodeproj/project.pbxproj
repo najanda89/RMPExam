@@ -21,6 +21,7 @@
 		FF233D3C1E93AC1200D5E7F9 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF233D391E93AC1200D5E7F9 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF233D3D1E93AC1200D5E7F9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF233D3A1E93AC1200D5E7F9 /* RealmSwift.framework */; };
 		FF233D3E1E93AC1200D5E7F9 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF233D3A1E93AC1200D5E7F9 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF233D431E93C26400D5E7F9 /* AlbumListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF233D421E93C26400D5E7F9 /* AlbumListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		FF233D331E93ABC200D5E7F9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF233D391E93AC1200D5E7F9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		FF233D3A1E93AC1200D5E7F9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		FF233D421E93C26400D5E7F9 /* AlbumListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				FF233D1D1E939EFE00D5E7F9 /* AppDelegate.swift */,
 				FF233D1F1E939EFE00D5E7F9 /* ViewController.swift */,
 				FF233D2F1E93ABC200D5E7F9 /* AlbumListTableViewController.swift */,
+				FF233D421E93C26400D5E7F9 /* AlbumListTableViewCell.swift */,
 				FF233D301E93ABC200D5E7F9 /* LoginTableViewController.swift */,
 				FF233D311E93ABC200D5E7F9 /* RealmDataCenter.swift */,
 				FF233D321E93ABC200D5E7F9 /* SignUpTableViewController.swift */,
@@ -193,6 +196,7 @@
 				FF233D201E939EFE00D5E7F9 /* ViewController.swift in Sources */,
 				FF233D1E1E939EFE00D5E7F9 /* AppDelegate.swift in Sources */,
 				FF233D381E93ABC200D5E7F9 /* User.swift in Sources */,
+				FF233D431E93C26400D5E7F9 /* AlbumListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
