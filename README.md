@@ -13,6 +13,6 @@ TODO
 - [ ] Sign Up
 - [ ] Save User-data in keychain
 - [x] Load Album data
-- [ ] Insert Album data
-- [ ] Edit/Delete Album data
+- [x] Insert Album data
+- [x] Edit/Delete Album data
 - [ ] Change Album data location
